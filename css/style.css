@@ -1,0 +1,94 @@
+@font-face {
+    font-family: GilroyExtraBold;
+    src: url(../fonts/gilroy-extrabold.otf);
+}
+
+@font-face {
+    font-family: GeometriaBold;
+    src: url(../fonts/geometria-bold.otf);
+}
+
+@font-face {
+    font-family: Geometria;
+    src: url(../fonts/geometria.otf);
+}
+
+@font-face {
+    font-family: OswaldRegular;
+    src: url(../fonts/oswald-regular.otf);
+}
+
+@media all and (min-device-width: 1280px) {
+  body {
+    background-image: url(../images/bg.jpg);
+    background-color: #fefefe;
+    background-position: center;
+    background-repeat-x: no-repeat;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 70px;
+    background-image: url(../images/v.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .container h1 {
+    font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
+    color: black;
+    font-weight: 700;
+  }
+
+  .container h2 {
+    font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
+    color: #e7e7e7;
+  }
+
+  footer {
+    margin-top: 70px;
+    font-family: 'Geometria', 'Roboto', sans-serif;
+  }
+
+  footer div {
+    display: inline;
+    padding-right: 50px;
+    padding-left: 30px;
+  }
+
+  footer .what-are-we {
+    display: inline-block;
+    float: right;
+  }
+}
+
+@media all and (device-width: 992px) {
+
+}
+
+@media all and (device-width: 768px) {
+
+}
+
+@media all and (device-width: 500px) {
+
+}
+
+.container .project-ragne-trade {
+  padding-left: 1px;
+}
+
+.container .project-kaelum img {
+  width: 64px;
+}
+
+.portfolio .project-ragne-trade {
+  font-family: 'GeometriaBold', 'Roboto', sans-serif;
+  font-size: 1.7em;
+}
+
+.portfolio .project-kaelum {
+  font-family: 'OswaldRegular', 'Roboto', sans-serif;
+  font-size: 1.7em;
+}
