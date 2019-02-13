@@ -60,7 +60,7 @@
   footer .what-are-we {
     display: inline-block;
     float: right;
-  }
+  }  
 }
 
 @media all and (device-width: 992px) {
