@@ -39,6 +39,7 @@
     font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
     color: black;
     font-weight: 700;
+    font-size: 3em;
   }
 
   .container h2 {
@@ -60,7 +61,13 @@
   footer .what-are-we {
     display: inline-block;
     float: right;
-  }  
+  }
+
+  .portfolio h2 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+  }
+
 }
 
 @media all and (device-width: 992px) {
@@ -79,8 +86,29 @@
   padding-left: 1px;
 }
 
+.container .project-ragne-trade div {
+    display: inline-block;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.container .project-kaelum div {
+    display: inline-block;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
 .container .project-kaelum img {
   width: 64px;
+}
+
+.container .header-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #6f6ef2;
+    display: inline-block;
 }
 
 .portfolio .project-ragne-trade {
@@ -91,4 +119,25 @@
 .portfolio .project-kaelum {
   font-family: 'OswaldRegular', 'Roboto', sans-serif;
   font-size: 1.7em;
+  margin-top: 30px;
+}
+
+#vi-telegram {
+    margin-bottom: -5px;
+}
+
+#vi-phone {
+    margin-bottom: -7px;
+}
+
+#vi-email {
+    margin-bottom: -2px;
+    margin-right: 4px;
+}
+
+footer .what-are-we {
+    text-align: right;
+    font-size: 0.9em;
+    padding-right: 0px;
+    padding-left: 0px;
 }
