@@ -5,8 +5,8 @@
     <title>VallySoft is creative startup software company</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body id="range-trade-portfolio">
-    <div style="display: none;" class="container">
+  <body>
+    <div class="container" id="start-state">
       <header>
         <img src="images/logo.png" alt="VallySoft logotype">
       </header>
@@ -16,11 +16,13 @@
             <div class="header-dot"></div>
             Portfolio:
         </h2>
-        <div class="project-ragne-trade">
-          <img src="images/range-trade-logo.jpg" alt="Range.Trade">
-          <div>
+        <div class="project-ragne-trade" id="btn-range-trade-open">
+          <a href="#range-trade-portfolio">
+            <img src="images/range-trade-logo.jpg" alt="Range.Trade">
+            <div>
               range.trade
-          </div>
+            </div>
+          </a>
         </div>
         <div class="project-kaelum">
           <img src="images/kaelum-logo.jpg" alt="Kaelum">
@@ -47,16 +49,18 @@
         </div>
       </footer>
     </div>
-    <div class="container container-range-trade">
+    <div style="display: none;" class="container container-range-trade" id="range-trade-state">
         <header>
             <img src="images/logo.png" alt="VallySoft logotype">
         </header>
         <div class="portfolio">
-            <div class="project-ragne-trade">
-              <img src="images/range-trade-logo.jpg" alt="Range.Trade">
-              <div>
+            <div class="project-ragne-trade" id="btn-range-trade-close">
+              <a href="#start-screen">
+                <img src="images/range-trade-logo.jpg" alt="Range.Trade">
+                <div>
                   range.trade
-              </div>
+                </div>
+              </a>
             </div>
         </div>
         <div class="portfolio-presentation">
@@ -69,4 +73,5 @@
         </div>
     </div>
   </body>
+  <script type="text/javascript" src="js/portfolio.js"></script>
 </html>
