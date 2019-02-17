@@ -35,6 +35,48 @@
     background-position: right;
   }
 
+  .container.container-range-trade {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 70px;
+    background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
+    /* background-image: url(../images/range-trade-portfolio.png); */
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .container.container-range-trade .portfolio {
+    margin-top: 285px;
+
+  }
+
+  .container.container-range-trade .portfolio-presentation {
+      display: inline-block;
+      float: right;
+      position: absolute;
+      top: 10px;
+      right: 150px;``
+  }
+
+  .container.container-range-trade .portfolio-presentation h2 {
+      margin-top: -75px;
+      margin-bottom: 0px;
+      font-size: 4em;
+      text-align: right;
+  }
+
+  .container.container-range-trade .portfolio-presentation h3 {
+      font-family: 'Geometria', 'Roboto', sans-serif;
+      color: #a662c7;
+      text-align: right;
+  }
+
+  .portfolio .project-ragne-trade {
+      width: 350px;
+      display: inline-block;
+  }
+
   .container h1 {
     font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
     color: black;
@@ -93,6 +135,10 @@
     margin-left: 15px;
 }
 
+.container.container-range-trade .project-ragne-trade div {
+    color: white;
+}
+
 .container .project-kaelum div {
     display: inline-block;
     position: absolute;
@@ -133,6 +179,11 @@
 #vi-email {
     margin-bottom: -2px;
     margin-right: 4px;
+}
+
+#range-trade-portfolio {
+    background-color: #1e0a2d;
+    background-image: none;
 }
 
 footer .what-are-we {
