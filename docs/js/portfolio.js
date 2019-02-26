@@ -7,9 +7,31 @@
    */
   btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
   btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
+  if (window.innerWidth > 800) {
+    btnRangeTradeOpen.addEventListener('mouseover', mouseOverBtnRangeTrade);
+    btnRangeTradeClose.addEventListener('mouseout', mouseOutBtnRangeTrade);
+  }
 
   /**
-   * Event Handler for clict to Range.Trade portfolio button
+   * Wrap for clickBtnRangeTrade function
+   *
+   * @author Robert Kuznetsov
+   */
+  function mouseOverBtnRangeTrade(event) {
+    clickBtnRangeTrade();
+  }
+
+  /**
+   * Wrap for clickBtnRangeTradeClose function
+   *
+   * @author Robert Kuznetsov
+   */
+  function mouseOutBtnRangeTrade(event) {
+    clickBtnRangeTradeClose();
+  }
+
+  /**
+   * Event Handler for click to Range.Trade portfolio button
    *
    * @author Robert Kuznetsov
    */
@@ -24,7 +46,7 @@
   }
 
   /**
-   * Event Handler for clict to Range.Trade portfolio close button
+   * Event Handler for click to Range.Trade portfolio close button
    *
    * @author Robert Kuznetsov
    */
