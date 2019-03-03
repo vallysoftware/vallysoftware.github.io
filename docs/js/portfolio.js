@@ -119,7 +119,7 @@
     let body = document.getElementsByTagName('body');
 
     startState.style.display = 'block';
-    startState.style.backgroundImage = 'url(../images/v.png)';
+    startState.style.backgroundImage = 'url(images/v.png)';
     kaelumState.style.display = 'none';
     body[0].removeAttribute('id');
   }

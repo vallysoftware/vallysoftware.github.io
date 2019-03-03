@@ -74,7 +74,15 @@
       margin-top: 345px;
   }
 
-  .container.container-range-trade .portfolio-presentation, .container.container-kaelum .portfolio-presentation {
+  .container.container-range-trade .portfolio-presentation {
+      display: inline-block;
+      float: right;
+      position: absolute;
+      top: 30px;
+      right: 236px;
+  }
+
+  .container.container-kaelum .portfolio-presentation {
       display: inline-block;
       float: right;
       position: absolute;
@@ -204,6 +212,7 @@
   font-family: 'OswaldRegular', 'Roboto', sans-serif;
   font-size: 1.7em;
   margin-top: 30px;
+  width: 160px;
 }
 
 #vi-telegram {
