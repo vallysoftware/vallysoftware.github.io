@@ -20,9 +20,9 @@
   }
 
   let clickBtnRangeTradeAfterMoment = timeoutDecorator(clickBtnRangeTrade, 100);
-  let clickBtnRangeTradeCloseAfterMoment = timeoutDecorator(clickBtnRangeTradeClose, 300);
+  let clickBtnRangeTradeCloseAfterMoment = timeoutDecorator(clickBtnRangeTradeClose, 700);
   let clickBtnKaelumAfterMoment = timeoutDecorator(clickBtnKaelum, 100);
-  let clickBtnKaelumCloseAfterMoment = timeoutDecorator(clickBtnKaelumClose, 300);
+  let clickBtnKaelumCloseAfterMoment = timeoutDecorator(clickBtnKaelumClose, 700);
 
   /**
    * Wrap for clickBtnRangeTrade function
