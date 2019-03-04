@@ -18,6 +18,87 @@
     src: url(../fonts/oswald-regular.otf);
 }
 
+.container .project-ragne-trade {
+    padding-left: 1px;
+}
+
+.container .project-ragne-trade div {
+    display: inline-block;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 15px;
+    color: black;
+}
+
+.container.container-range-trade .project-ragne-trade div {
+    color: white;
+}
+
+.container .project-kaelum div {
+    display: inline-block;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.container .project-kaelum img {
+    width: 64px;
+}
+
+.container .header-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #6f6ef2;
+    display: inline-block;
+}
+
+.portfolio .project-ragne-trade {
+    font-family: 'GeometriaBold', 'Roboto', sans-serif;
+    font-size: 1.7em;
+    width: 240px;
+}
+
+.portfolio .project-kaelum {
+    font-family: 'OswaldRegular', 'Roboto', sans-serif;
+    font-size: 1.7em;
+    margin-top: 30px;
+    width: 160px;
+}
+
+#vi-telegram {
+    margin-bottom: -5px;
+}
+
+#vi-phone {
+    margin-bottom: -7px;
+}
+
+#vi-email {
+    margin-bottom: -2px;
+    margin-right: 4px;
+}
+
+#range-trade-portfolio {
+    background-color: #1e0a2d;
+    background-image: none;
+}
+
+#kaelum-portfolio {
+    background-color: #0b1a21;
+    background-image: url(../images/kaelum-portfolio-full.jpg);
+}
+
+#btn-kaelum-close a div {
+    color: white;
+}
+
+footer .what-are-we {
+    text-align: right;
+    font-size: 0.9em;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 @media all and (min-device-width: 1280px) {
   body {
       background-image: url(../images/bg.jpg);
@@ -42,7 +123,7 @@
       width: 1000px;
       height: 600px;
       margin: 0 auto;
-      margin-top: 70px;
+      margin-top: 70px;g
       background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
       /* background-image: url(../images/range-trade-portfolio.png); */
       background-repeat: no-repeat;
@@ -168,83 +249,3 @@
 
 }
 
-.container .project-ragne-trade {
-  padding-left: 1px;
-}
-
-.container .project-ragne-trade div {
-    display: inline-block;
-    position: absolute;
-    margin-top: 6px;
-    margin-left: 15px;
-    color: black;
-}
-
-.container.container-range-trade .project-ragne-trade div {
-    color: white;
-}
-
-.container .project-kaelum div {
-    display: inline-block;
-    position: absolute;
-    margin-top: 6px;
-    margin-left: 15px;
-}
-
-.container .project-kaelum img {
-  width: 64px;
-}
-
-.container .header-dot {
-    height: 10px;
-    width: 10px;
-    background-color: #6f6ef2;
-    display: inline-block;
-}
-
-.portfolio .project-ragne-trade {
-    font-family: 'GeometriaBold', 'Roboto', sans-serif;
-    font-size: 1.7em;
-    width: 240px;
-}
-
-.portfolio .project-kaelum {
-  font-family: 'OswaldRegular', 'Roboto', sans-serif;
-  font-size: 1.7em;
-  margin-top: 30px;
-  width: 160px;
-}
-
-#vi-telegram {
-    margin-bottom: -5px;
-}
-
-#vi-phone {
-    margin-bottom: -7px;
-}
-
-#vi-email {
-    margin-bottom: -2px;
-    margin-right: 4px;
-}
-
-#range-trade-portfolio {
-    background-color: #1e0a2d;
-    background-image: none;
-}
-
-#kaelum-portfolio {
-    background-color: #0b1a21;
-    background-image: url(../images/kaelum-portfolio-full.jpg);
-}
-
-#btn-kaelum-close a div {
-    color: white;
-}
-
-footer .what-are-we {
-    text-align: right;
-    font-size: 0.9em;
-    padding-right: 0px;
-    padding-left: 0px;
-}
