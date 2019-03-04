@@ -405,12 +405,12 @@ footer .what-are-we {
     }
 
     #start-state {
-        background-size: 260px;
+        background-size: 210px;
         background-image: url(../images/v.png);
     }
 
     .container {
-        width: 826px;
+        width: 620px;
         margin: 0 auto;
         margin-top: 70px;
         background-repeat: no-repeat;
@@ -418,8 +418,8 @@ footer .what-are-we {
     }
 
     .container.container-range-trade {
-        width: 826px;
-        height: 600px;
+        width: 620px;
+        height: 500px;
         margin: 0 auto;
         margin-top: 70px;
         background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
@@ -429,8 +429,8 @@ footer .what-are-we {
     }
 
     .container.container-kaelum {
-        width: 826px;
-        height: 600px;
+        width: 620px;
+        height: 500px;
         margin: 0 auto;
         margin-top: 70px;
         /* background: radial-gradient(circle closest-side at center, #237882, #07171d); */
@@ -458,7 +458,7 @@ footer .what-are-we {
         float: right;
         position: absolute;
         top: 30px;
-        right: 236px;
+        right: 0px;
     }
 
     .container.container-kaelum .portfolio-presentation {
@@ -470,10 +470,11 @@ footer .what-are-we {
     }
 
     .container.container-range-trade .portfolio-presentation h2 {
-        margin-top: -75px;
+        margin-top: -140px;
         margin-bottom: 0px;
         font-size: 4em;
-        text-align: right;
+        text-align: left;
+        padding-left: 150px;
     }
 
     .container.container-kaelum .portfolio-presentation h2 {
@@ -486,7 +487,8 @@ footer .what-are-we {
     .container.container-range-trade .portfolio-presentation h3 {
         font-family: 'Geometria', 'Roboto', sans-serif;
         color: #a662c7;
-        text-align: right;
+        text-align: left;
+        padding-left: 150px;
     }
 
     .container.container-kaelum .portfolio-presentation h3 {
@@ -496,7 +498,8 @@ footer .what-are-we {
     }
 
     .portfolio .project-ragne-trade {
-        width: 350px;
+        width: 240px;
+        height: 45px;
         display: inline-block;
     }
 
@@ -504,7 +507,7 @@ footer .what-are-we {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
         color: black;
         font-weight: 700;
-        font-size: 3em;
+        font-size: 40px;
     }
 
     .container h2 {
@@ -519,9 +522,9 @@ footer .what-are-we {
 
     footer div {
         display: inline;
-        padding-right: 50px;
-        padding-left: 30px;
-        font-size: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 17px;
         font-weight: 500;
         color: #929292;
     }
