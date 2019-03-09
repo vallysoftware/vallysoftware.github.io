@@ -265,7 +265,8 @@ footer .what-are-we {
         height: 600px;
         margin: 0 auto;
         margin-top: 70px;
-    background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
+        padding-left: 0;
+        background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
         /* background-image: url(../images/range-trade-portfolio.png); */
         background-repeat: no-repeat;
         background-position: right;
@@ -276,6 +277,7 @@ footer .what-are-we {
         height: 600px;
         margin: 0 auto;
         margin-top: 70px;
+        padding-left: 0;
         /* background: radial-gradient(circle closest-side at center, #237882, #07171d); */
         /* background-image: url(../images/range-trade-portfolio.png); */
         /* background-repeat: no-repeat; */
@@ -446,11 +448,13 @@ footer .what-are-we {
     }
 
     .container.container-range-trade .portfolio {
-        margin-top: 260px;
+        margin-top: 234px;
+        position: sticky;
+        z-index: 10;
     }
 
     .container.container-kaelum .portfolio {
-        margin-top: 345px;
+        margin-top: 315px;
     }
 
     .container.container-range-trade .portfolio-presentation {
@@ -458,7 +462,7 @@ footer .what-are-we {
         float: right;
         position: absolute;
         top: 30px;
-        right: 0px;
+        right: 80px;
     }
 
     .container.container-kaelum .portfolio-presentation {
@@ -466,7 +470,7 @@ footer .what-are-we {
         float: right;
         position: absolute;
         top: 430px;
-        right: 236px;
+        right: 80px;
     }
 
     .container.container-range-trade .portfolio-presentation h2 {
@@ -546,8 +550,192 @@ footer .what-are-we {
         padding-left: 0px;
         margin-left: -5px;
     }
+
+    .portfolio-presentation img {
+
+    }
 }
 
-@media all and (width: 500px) and (max-width: 767px) {
-}
+@media all and (min-width: 0px) and (max-width: 767px) {
+    body {
+        background-image: url(../images/bg.jpg);
+        background-color: #fefefe;
+        background-color: #fff;
+        background-position: center;
+        background-repeat-x: no-repeat;
+        padding: 0px 50px;
+    }
 
+    #start-state {
+        background-size: 210px;
+        background-image: url(../images/v.png);
+    }
+
+    .container {
+        width: 415px;
+        margin: 0 auto;
+        margin-top: 70px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .portfolio .project-kaelum {
+        margin-top: 15px;
+    }
+
+    .container.container-range-trade {
+        width: 440px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 70px;
+        background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
+        /* background-image: url(../images/range-trade-portfolio.png); */
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .container.container-kaelum {
+        width: 440px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 70px;
+        /* background: radial-gradient(circle closest-side at center, #237882, #07171d); */
+        /* background-image: url(../images/range-trade-portfolio.png); */
+        /* background-repeat: no-repeat; */
+        /* background-position: right; */
+        /* background-size: 1145px; */
+        backgroud: none;
+    }
+
+    .container-range-trade, .container-kaelum {
+        padding-left: 15px;
+    }
+
+    .container.container-range-trade .portfolio {
+        margin-top: 332px;
+        position: sticky;
+        z-index: 10;
+    }
+
+    .container.container-kaelum .portfolio {
+        margin-top: 395px;
+    }
+
+    .container.container-range-trade .portfolio-presentation {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 30px;
+        /* right: 80px; */
+    }
+
+    .container.container-kaelum .portfolio-presentation {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 430px;
+        right: 80px;
+    }
+
+    .container.container-range-trade .portfolio-presentation h2 {
+        margin-top: -75px;
+        margin-bottom: 0px;
+        font-size: 3em;
+        text-align: left;
+        padding-left: 150px;
+    }
+
+    .container.container-kaelum .portfolio-presentation h2 {
+        margin-top: -75px;
+        margin-bottom: 0px;
+        font-size: 3em;
+        text-align: left;
+    }
+
+    .container.container-range-trade .portfolio-presentation h3 {
+        font-family: 'Geometria', 'Roboto', sans-serif;
+        color: #a662c7;
+        text-align: left;
+        padding-left: 150px;
+    }
+
+    .container.container-kaelum .portfolio-presentation h3 {
+        font-family: 'Geometria', 'Roboto', sans-serif;
+        color: #8ae4cc;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .portfolio .project-ragne-trade {
+        width: 240px;
+        height: 45px;
+        display: inline-block;
+    }
+
+    .container h1 {
+        font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
+        color: black;
+        font-weight: 700;
+        font-size: 40px;
+        width: 200px;
+    }
+
+    .container h2 {
+        font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
+        color: #e7e7e7;
+    }
+
+    footer {
+        margin-top: 30px;
+        font-family: 'Geometria', 'Roboto', sans-serif;
+    }
+
+    footer div {
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 17px;
+        font-weight: 500;
+        color: #929292;
+        width: 380px;
+    }
+
+    footer .what-are-we {
+        display: inline-block;
+        float: left;
+        padding-left: 0px;
+        padding-top: 25px;
+        text-align: left;
+    }
+
+    .portfolio h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .telegram {
+        padding-left: 0px;
+        margin-left: -5px;
+    }
+
+    .portfolio-presentation img {
+        height: 300px;
+        margin-top: 75px;
+        margin-left: 50px;
+    }
+
+    .email {
+        padding-left: 0px;
+        margin-left: -4px;
+        padding-top: 10px;
+    }
+
+    .phone {
+        padding-left: 4px;
+        margin-top: 10px;
+    }
+
+    .phone, .telegram, .email {
+        font-weight: 600;
+    }
+}
