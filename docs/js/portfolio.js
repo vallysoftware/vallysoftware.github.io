@@ -16,7 +16,7 @@
     btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
     btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
     btnKaelumOpen.addEventListener('click', clickBtnKaelum);
-    btnKaelumClose.addEventListener('click', clickBtnKaelum);
+    btnKaelumClose.addEventListener('click', clickBtnKaelumClose);
   }
 
   let clickBtnRangeTradeAfterMoment = timeoutDecorator(clickBtnRangeTrade, 100);
