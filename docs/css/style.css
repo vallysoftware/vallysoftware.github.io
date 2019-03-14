@@ -99,7 +99,7 @@ footer .what-are-we {
     padding-left: 0px;
 }
 
-@media all and (min-device-width: 992px) {
+@media all and (min-width: 992px) {
   body {
       background-image: url(../images/bg.jpg);
       background-color: #fefefe;
@@ -238,7 +238,7 @@ footer .what-are-we {
 
 }
 
-@media all and (min-device-width: 430px) and (max-device-width: 991px) {
+@media all and (min-width: 761px) and (max-width: 991px) {
     body {
         background-image: url(../images/bg.jpg);
         background-color: #fefefe;
@@ -397,7 +397,7 @@ footer .what-are-we {
     }
 }
 
-@media all and (min-device-width: 340px) and (max-device-width: 429px) {
+@media all and (min-width: 570px) and (max-width: 761px) {
     body {
         background-image: url(../images/bg.jpg);
         background-color: #fefefe;
@@ -556,7 +556,7 @@ footer .what-are-we {
     }
 }
 
-@media all and (min-device-width: 0px) and (max-device-width: 339px) {
+@media all and (min-width: 0px) and (max-width: 569px) {
     body {
         background-image: url(../images/bg.jpg);
         background-color: #fefefe;
