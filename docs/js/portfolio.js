@@ -1,17 +1,25 @@
 ;(function () {
+  const START_SCREEN_STATE = 1;
+  const RANGE_TRADE_SCREEN_STATE = 2;
+  const KAELUM_SCREEN_STATE = 3;
+
   let btnRangeTradeOpen = document.getElementById('btn-range-trade-open');
   let btnRangeTradeClose = document.getElementById('btn-range-trade-close');
   let btnKaelumOpen = document.getElementById('btn-kaelum-open');
   let btnKaelumClose = document.getElementById('btn-kaelum-close');
+  let currentScreenState = START_SCREEN_STATE;
+  let blockedUpdateScreen = false;
 
   /**
    * Adding event listeners
    */
   if (window.innerWidth > 800) {
-    btnRangeTradeOpen.addEventListener('mouseenter', mouseOverBtnRangeTrade);
-    btnRangeTradeClose.addEventListener('mouseleave', mouseOutBtnRangeTrade);
-    btnKaelumOpen.addEventListener('mouseenter', mouseOverBtnKaelum);
-    btnKaelumClose.addEventListener('mouseleave', mouseOutBtnKaelum);
+    // btnRangeTradeOpen.addEventListener('mouseenter', mouseOverBtnRangeTrade);
+    // btnRangeTradeClose.addEventListener('mouseleave', mouseOutBtnRangeTrade);
+    // btnKaelumOpen.addEventListener('mouseenter', mouseOverBtnKaelum);
+    // btnKaelumClose.addEventListener('mouseleave', mouseOutBtnKaelum);
+
+    checkScreenState();
   } else {
     btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
     btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
@@ -23,6 +31,81 @@
   let clickBtnRangeTradeCloseAfterMoment = timeoutDecorator(clickBtnRangeTradeClose, 700);
   let clickBtnKaelumAfterMoment = timeoutDecorator(clickBtnKaelum, 100);
   let clickBtnKaelumCloseAfterMoment = timeoutDecorator(clickBtnKaelumClose, 700);
+
+  /**
+   *
+   */
+  function checkScreenState() {
+    let $buttonRangeTradeOpen = $('  #btn-range-trade-open');
+    let $buttonKaelumOpen = $('#btn-kaelum-open');
+    let $buttonRangeTradeClose = $('#btn-range-trade-close');
+    let $buttonKaelumClose = $('#btn-kaelum-close');
+
+    var offsetRangeOpen = $.extend($buttonRangeTradeOpen.offset(), {
+    	width : $buttonRangeTradeOpen.outerWidth(),
+      height : $buttonRangeTradeOpen.outerHeight()
+    });
+
+    var offsetKaelumOpen = $.extend($buttonKaelumOpen.offset(), {
+    	width : $buttonKaelumOpen.outerWidth(),
+      height : $buttonKaelumOpen.outerHeight()
+    });
+
+    var offsetRangeClose = $.extend($buttonRangeTradeClose.offset(), {
+    	width : $buttonRangeTradeClose.outerWidth(),
+      height : $buttonRangeTradeClose.outerHeight()
+    });
+
+    var offsetKaelumClose = $.extend($buttonKaelumClose.offset(), {
+    	width : $buttonKaelumClose.outerWidth(),
+      height : $buttonKaelumClose.outerHeight()
+    });
+
+    function isMoveOn(x, y, elementCoords) {
+      if((x >= elementCoords.left && x <= elementCoords.left + elementCoords.width) && (y >= elementCoords.top && y <= elementCoords.top + elementCoords.height)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    $('body').mousemove(function(e){
+    	var x = e.pageX;
+      var y = e.pageY;
+
+      if (isMoveOn(x, y, offsetRangeOpen)) {
+        console.log('1 condition');
+        if (currentScreenState === START_SCREEN_STATE || currentScreenState === KAELUM_SCREEN_STATE) {
+          console.log('go to screen 2');
+          currentScreenState = RANGE_TRADE_SCREEN_STATE;
+          clickBtnRangeTrade();
+        }
+      } else if (isMoveOn(x, y, offsetKaelumOpen)) {
+        console.log('2 condition');
+        if (currentScreenState === START_SCREEN_STATE || currentScreenState === RANGE_TRADE_SCREEN_STATE) {
+          console.log('go to screen 3');
+          currentScreenState = KAELUM_SCREEN_STATE;
+          clickBtnKaelum();
+        }
+      } else {
+        console.log('3 condition');
+        if (currentScreenState === RANGE_TRADE_SCREEN_STATE) {
+          console.log('go to screen 1 from 2 screen');
+          currentScreenState = START_SCREEN_STATE;
+          clickBtnRangeTradeClose();
+        } else if (currentScreenState === KAELUM_SCREEN_STATE) {
+          console.log('go to screen 1 from 3 screen');
+          currentScreenState = START_SCREEN_STATE;
+          clickBtnKaelumClose();
+        } else {
+          console.log('Special');
+          if (! blockedUpdateScreen) {
+            setStartState();
+          }
+        }
+      }
+    });
+  }
 
   /**
    * Wrap for clickBtnRangeTrade function
@@ -60,25 +143,46 @@
     clickBtnKaelumCloseAfterMoment();
   }
 
+  function setStartState() {
+    $('#range-trade-state').css('display', 'none');
+    $('#kaelum-state').css('display', 'none');
+
+    let $startState = $('#start-state');
+    let $rangeTradeState = $('#range-trade-state');
+    let $kaelumState = $('#kaelum-state');
+    let $body = $('body');
+
+    $rangeTradeState.css('display', 'none');
+    $kaelumState.css('display', 'none');
+    $startState.css('display', 'block');
+    $body.removeAttr('id');
+    $body.css('opacity', 1);
+  }
+
   /**
    * Event Handler for click to Range.Trade portfolio button
    *
    * @author Robert Kuznetsov
    */
   function clickBtnRangeTrade() {
-    let $startState = $('#start-state');
-    let $rangeTradeState = $('#range-trade-state');
-    let $body = $('body');
+    if (! blockedUpdateScreen) {
+      blockedUpdateScreen = true;
+      let $startState = $('#start-state');
+      let $rangeTradeState = $('#range-trade-state');
+      let $body = $('body');
 
-    $startState.animate({opacity: 0}, 'slow', function () {
-      $startState.css('display', 'none');
-      $('#range-trade-portfolio').css('opacity', 0);
-      $rangeTradeState.css('opacity', 0);
-      $rangeTradeState.css({'display':'block'});
-      $rangeTradeState.animate({'opacity': 1}, 'slow');
+      $startState.animate({opacity: 0}, 'slow', function () {
+        $startState.css('display', 'none');
+        $('#range-trade-portfolio').css('opacity', 0);
+        $rangeTradeState.css('opacity', 0);
+        $rangeTradeState.css({'display':'block'});
+        $rangeTradeState.animate({'opacity': 1}, 'slow', function () {
+          blockedUpdateScreen = false;
+        });
 
-      $body.attr('id', 'range-trade-portfolio');
-    });
+        $body.attr('id', 'range-trade-portfolio');
+      });
+    }
 
     // let startState = document.getElementById('start-state');
     // let rangeTradeState = document.getElementById('range-trade-state');
@@ -95,8 +199,27 @@
    * @author Robert Kuznetsov
    */
   function clickBtnKaelum() {
-    console.log('clickBtnKaelum')
-    let startState = document.getElementById('start-state');
+    if (! blockedUpdateScreen) {
+      blockedUpdateScreen = true;
+
+      let $startState = $('#start-state');
+      let $kaelumState = $('#kaelum-state');
+      let $body = $('body');
+
+      $startState.animate({opacity: 0}, 'slow', function () {
+        $startState.css('display', 'none');
+        $('#kaelum-portfolio').css('opacity', 0);
+        $kaelumState.css('opacity', 0);
+        $kaelumState.css({'display':'block'});
+        $kaelumState.animate({'opacity': 1}, 'slow', function () {
+          blockedUpdateScreen = false;
+        });
+
+        $body.attr('id', 'kaelum-portfolio');
+      });
+    }
+
+    /*let startState = document.getElementById('start-state');
     let kaelumState = document.getElementById('kaelum-state');
     let body = document.getElementsByTagName('body');
 
@@ -104,7 +227,7 @@
     startState.style.backgroundImage = 'none';
     kaelumState.style.display = 'block';
 
-    body[0].setAttribute('id', 'kaelum-portfolio');
+    body[0].setAttribute('id', 'kaelum-portfolio');*/
   }
 
   /**
@@ -113,20 +236,22 @@
    * @author Robert Kuznetsov
    */
   function clickBtnRangeTradeClose() {
-    let $startState = $('#start-state');
-    let $rangeTradeState = $('#range-trade-state');
-    let $body = $('body');
+    // if (! blockedUpdateScreen) {
+      blockedUpdateScreen = true;
+      let $startState = $('#start-state');
+      let $rangeTradeState = $('#range-trade-state');
+      let $body = $('body');
 
-    $rangeTradeState.animate({opacity: 0}, 'slow', function () {
-      $rangeTradeState.css('display', 'none');
-      $startState.css('opacity', 0);
-      $startState.css('display', 'block');
-      $startState.animate({'opacity': 1}, 'slow', function () {
-        console.log('call analitics'); //@TODO add yandex metrics
+      $rangeTradeState.animate({opacity: 0}, 'slow', function () {
+        $rangeTradeState.css('display', 'none');
+        $startState.css('opacity', 0);
+        $startState.css('display', 'block');
+        $startState.animate({'opacity': 1}, 'slow', function () {
+          blockedUpdateScreen = false;
+        });
+        $body.removeAttr('id');
       });
-      $body.removeAttr('id');
-
-    });
+    // }
 
     // let startState = document.getElementById('start-state');
     // let rangeTradeState = document.getElementById('range-trade-state');
@@ -143,14 +268,32 @@
    * @author Robert Kuznetsov
    */
   function clickBtnKaelumClose() {
-    let startState = document.getElementById('start-state');
+    // if (! blockedUpdateScreen) {
+      blockedUpdateScreen = true;
+
+      let $startState = $('#start-state');
+      let $kaelumState = $('#kaelum-state');
+      let $body = $('body');
+
+      $kaelumState.animate({opacity: 0}, 'slow', function () {
+        $kaelumState.css('display', 'none');
+        $startState.css('opacity', 0);
+        $startState.css('display', 'block');
+        $startState.animate({'opacity': 1}, 'slow', function () {
+          blockedUpdateScreen = false;
+        });
+        $body.removeAttr('id');
+      });
+    // }
+
+    /*let startState = document.getElementById('start-state');
     let kaelumState = document.getElementById('kaelum-state');
     let body = document.getElementsByTagName('body');
 
     startState.style.display = 'block';
     startState.style.backgroundImage = 'url(images/v.png)';
     kaelumState.style.display = 'none';
-    body[0].removeAttribute('id');
+    body[0].removeAttribute('id');*/
   }
 
   /**
