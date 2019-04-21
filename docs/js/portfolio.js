@@ -66,13 +66,27 @@
    * @author Robert Kuznetsov
    */
   function clickBtnRangeTrade() {
-    let startState = document.getElementById('start-state');
-    let rangeTradeState = document.getElementById('range-trade-state');
-    let body = document.getElementsByTagName('body');
+    let $startState = $('#start-state');
+    let $rangeTradeState = $('#range-trade-state');
+    let $body = $('body');
 
-    startState.style.display = 'none';
-    rangeTradeState.style.display = 'block';
-    body[0].setAttribute('id', 'range-trade-portfolio');
+    $startState.animate({opacity: 0}, 'slow', function () {
+      $startState.css('display', 'none');
+      $('#range-trade-portfolio').css('opacity', 0);
+      $rangeTradeState.css('opacity', 0);
+      $rangeTradeState.css({'display':'block'});
+      $rangeTradeState.animate({'opacity': 1}, 'slow');
+
+      $body.attr('id', 'range-trade-portfolio');
+    });
+
+    // let startState = document.getElementById('start-state');
+    // let rangeTradeState = document.getElementById('range-trade-state');
+    // let body = document.getElementsByTagName('body');
+
+    // startState.style.display = 'none';
+    // rangeTradeState.style.display = 'block';
+    // body[0].setAttribute('id', 'range-trade-portfolio');
   }
 
   /**
@@ -99,13 +113,28 @@
    * @author Robert Kuznetsov
    */
   function clickBtnRangeTradeClose() {
-    let startState = document.getElementById('start-state');
-    let rangeTradeState = document.getElementById('range-trade-state');
-    let body = document.getElementsByTagName('body');
+    let $startState = $('#start-state');
+    let $rangeTradeState = $('#range-trade-state');
+    let $body = $('body');
 
-    startState.style.display = 'block';
-    rangeTradeState.style.display = 'none';
-    body[0].removeAttribute('id');
+    $rangeTradeState.animate({opacity: 0}, 'slow', function () {
+      $rangeTradeState.css('display', 'none');
+      $startState.css('opacity', 0);
+      $startState.css('display', 'block');
+      $startState.animate({'opacity': 1}, 'slow', function () {
+        console.log('call analitics'); //@TODO add yandex metrics
+      });
+      $body.removeAttr('id');
+
+    });
+
+    // let startState = document.getElementById('start-state');
+    // let rangeTradeState = document.getElementById('range-trade-state');
+    // let body = document.getElementsByTagName('body');
+
+    // startState.style.display = 'block';
+    // rangeTradeState.style.display = 'none';
+    // body[0].removeAttribute('id');
   }
 
   /**
