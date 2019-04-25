@@ -36,7 +36,7 @@
    *
    */
   function checkScreenState() {
-    let $buttonRangeTradeOpen = $('  #btn-range-trade-open');
+    let $buttonRangeTradeOpen = $('#btn-range-trade-open');
     let $buttonKaelumOpen = $('#btn-kaelum-open');
     let $buttonRangeTradeClose = $('#btn-range-trade-close');
     let $buttonKaelumClose = $('#btn-kaelum-close');
