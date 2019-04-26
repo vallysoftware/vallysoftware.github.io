@@ -23,14 +23,16 @@
   } else {
     btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
     btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
-    btnKaelumOpen.addEventListener('click', clickBtnKaelum);
-    btnKaelumClose.addEventListener('click', clickBtnKaelumClose);
+    // btnKaelumOpen.addEventListener('click', clickBtnKaelum);
+    // btnKaelumClose.addEventListener('click', clickBtnKaelumClose);
   }
+
+
 
   let clickBtnRangeTradeAfterMoment = timeoutDecorator(clickBtnRangeTrade, 100);
   let clickBtnRangeTradeCloseAfterMoment = timeoutDecorator(clickBtnRangeTradeClose, 700);
-  let clickBtnKaelumAfterMoment = timeoutDecorator(clickBtnKaelum, 100);
-  let clickBtnKaelumCloseAfterMoment = timeoutDecorator(clickBtnKaelumClose, 700);
+  // let clickBtnKaelumAfterMoment = timeoutDecorator(clickBtnKaelum, 100);
+  // let clickBtnKaelumCloseAfterMoment = timeoutDecorator(clickBtnKaelumClose, 700);
 
   /**
    *
@@ -311,4 +313,12 @@
           setTimeout(func, timeout);
       }
   }
+
+  $(document).ready(function () {
+    $(document).on('click', '.project-ragne-trade', function () {
+      if ($('#range-trade-state').css('display') == 'block') {
+        window.location = 'https://www.range.trade/';
+      }
+    });
+  });
 }());
