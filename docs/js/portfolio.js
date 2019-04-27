@@ -13,19 +13,19 @@
   /**
    * Adding event listeners
    */
-  if (window.innerWidth > 800) {
+  // if (window.innerWidth > 800) {
     // btnRangeTradeOpen.addEventListener('mouseenter', mouseOverBtnRangeTrade);
     // btnRangeTradeClose.addEventListener('mouseleave', mouseOutBtnRangeTrade);
     // btnKaelumOpen.addEventListener('mouseenter', mouseOverBtnKaelum);
     // btnKaelumClose.addEventListener('mouseleave', mouseOutBtnKaelum);
 
-    checkScreenState();
-  } else {
+    // checkScreenState();
+  // } else {
     btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
     btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
     // btnKaelumOpen.addEventListener('click', clickBtnKaelum);
     // btnKaelumClose.addEventListener('click', clickBtnKaelumClose);
-  }
+  // }
 
 
 
