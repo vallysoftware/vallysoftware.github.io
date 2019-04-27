@@ -161,6 +161,11 @@ footer .what-are-we {
     padding-left: 0px;
 }
 
+footer div a {
+    color: #929292;
+    text-decoration: none;
+}
+
 @media all and (min-width: 1200px) {
   body {
       background-image: url(../images/bg.jpg);
@@ -604,12 +609,23 @@ footer .what-are-we {
     }
 
     #start-state {
-        background-size: 210px;
+        background-size: 177px;
         background-image: url(../images/v.png);
     }
 
+    body#range-trade-portfolio {
+        background-image: none;
+        background-color: #1e0a2d00;
+    }
+
+    #range-trade-html {
+        /* background: radial-gradient(circle closest-side at center, #932458 0%, #972666 10%, #5d165e 30%, #4e1658 70%, #1e0a2d 100%); */
+        background: radial-gradient(circle farthest-side at 424px 284px, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%);
+        height: 100%;
+    }
+
     .container {
-        width: 620px;
+        width: 540px;
         margin: 0 auto;
         margin-top: 70px;
         background-repeat: no-repeat;
@@ -617,18 +633,20 @@ footer .what-are-we {
     }
 
     .container.container-range-trade {
-        width: 620px;
-        height: 500px;
+        /* width: 620px; */
+        height: 900px;
         margin: 0 auto;
         margin-top: 70px;
-        background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
-        /* background-image: url(../images/range-trade-portfolio.png); */
+        /*
+        background: radial-gradient(circle closest-side at center, #932458 0%, #972666 10%, #5d165e 30%, #4e1658 70%, #1e0a2d 100%);
         background-repeat: no-repeat;
         background-position: right;
+        background-position-y: -187px;
+        background-position-x: 4px;
     }
 
     .container.container-kaelum {
-        width: 620px;
+        /* width: 620px; */
         height: 500px;
         margin: 0 auto;
         margin-top: 70px;
@@ -645,7 +663,7 @@ footer .what-are-we {
     }
 
     .container.container-range-trade .portfolio {
-        margin-top: 234px;
+        margin-top: 440px;
         position: sticky;
         z-index: 10;
     }
@@ -671,9 +689,9 @@ footer .what-are-we {
     }
 
     .container.container-range-trade .portfolio-presentation h2 {
-        margin-top: -140px;
+        margin-top: -70px;
         margin-bottom: 0px;
-        font-size: 4em;
+        font-size: 3em;
         text-align: left;
         padding-left: 150px;
     }
@@ -699,8 +717,8 @@ footer .what-are-we {
     }
 
     .portfolio .project-ragne-trade {
-        width: 240px;
-        height: 45px;
+        width: 320px;
+        height: 60px;
         display: inline-block;
         cursor: pointer;
     }
@@ -723,9 +741,8 @@ footer .what-are-we {
     }
 
     footer div {
-        display: inline;
-        padding-right: 20px;
-        padding-left: 20px;
+        display: block;
+        margin-top: 20px;
         font-size: 17px;
         font-weight: 500;
         color: #929292;
@@ -746,11 +763,66 @@ footer .what-are-we {
 
     .telegram {
         padding-left: 0px;
-        margin-left: -5px;
+        margin-left: -1px;
+    }
+
+    .telegram img {
+        padding-right: 5px;
+    }
+
+    .phone {
+        margin-left: 9px;
+    }
+
+    .phone img {
+        padding-right: 11px;
     }
 
     .portfolio-presentation img {
+        width: 455px;
+    }
 
+    .project-description {
+        padding-top: 25px;
+    }
+
+    #range-trade-portfolio .portfolio .project-ragne-trade {
+        margin-left: -25px;
+        background-color: #2d0841;
+        box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 1px 1px 46px rgba(0, 0, 0, 1);
+    }
+
+    #range-trade-portfolio .portfolio .project-ragne-trade .text {
+        padding-top: 6px;
+        padding-left: 5px;
+        height: 50px;
+        width: 245px;
+    }
+
+    #range-trade-portfolio .portfolio .project-ragne-trade .right {
+        padding-top: 0px;
+        /* background-image: url(..); */
+        width: 60px;
+        height: 50px;
+        right: 0px;
+        margin-top: 0px;
+        margin-right: 244px;
+    }
+
+    #range-trade-portfolio .portfolio .project-ragne-trade .right img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #range-trade-portfolio .portfolio .project-ragne-trade .text img {
+        width: 48px;
+        margin-top: 5px;
+    }
+
+    #range-trade-portfolio .container .project-ragne-trade .text div {
+        font-family: 'GeometriaBold', 'Roboto', sans-serif;
+        font-size: 25px;
+        margin-top: 0px;
     }
 }
 

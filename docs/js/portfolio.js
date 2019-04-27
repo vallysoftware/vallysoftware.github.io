@@ -172,6 +172,7 @@
       let $startState = $('#start-state');
       let $rangeTradeState = $('#range-trade-state');
       let $body = $('body');
+      let $html = $('html');
 
       $startState.animate({opacity: 0}, 'slow', function () {
         $startState.css('display', 'none');
@@ -183,6 +184,7 @@
         });
 
         $body.attr('id', 'range-trade-portfolio');
+        $html.attr('id', 'range-trade-html');
       });
     }
 
@@ -243,6 +245,7 @@
       let $startState = $('#start-state');
       let $rangeTradeState = $('#range-trade-state');
       let $body = $('body');
+      let $html = $('html');
 
       $rangeTradeState.animate({opacity: 0}, 'slow', function () {
         $rangeTradeState.css('display', 'none');
@@ -252,6 +255,7 @@
           blockedUpdateScreen = false;
         });
         $body.removeAttr('id');
+        $html.removeAttr('id');
       });
     // }
 
