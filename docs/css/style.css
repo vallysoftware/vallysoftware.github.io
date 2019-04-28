@@ -36,6 +36,17 @@ header img.btn-close {
     cursor: pointer;
 }
 
+#range-trade-html {
+    /* background: radial-gradient(circle farthest-side at center 285px, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%); */
+    /* background: radial-gradient(50% 50%, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 4%, rgba(110,30,111,0.93) 21%, rgba(89,31,97,0.89) 31%, rgba(79,31,90,0.87843) 34%, rgba(68,31,83,0.88) 38%, rgba(53,14,74,0.89) 52%, rgba(47,12,66,0.8902) 60%, rgba(34,8,51,0.81) 77%, rgba(14,2,28,0.6902) 100%); */
+    background-color: rgb(43, 25, 60);
+    background-image: -moz-radial-gradient( 57% 268px, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 27%, rgba(110,30,111,0.93) 56%, rgba(89,31,97,0.89) 67%, rgba(79,31,90,0.87843) 78%, rgba(68,31,83,0.88) 100%, rgba(53,14,74,0.89) 134%, rgba(47,12,66,0.8902) 158%, rgba(34,8,51,0.81) 186%, rgba(14,2,28,0.6902) 300%);
+    background-image: -webkit-radial-gradient( 57% 268px, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 27%, rgba(110,30,111,0.93) 56%, rgba(89,31,97,0.89) 67%, rgba(79,31,90,0.87843) 78%, rgba(68,31,83,0.88) 100%, rgba(53,14,74,0.89) 134%, rgba(47,12,66,0.8902) 158%, rgba(34,8,51,0.81) 186%, rgba(14,2,28,0.6902) 300%);
+    background-image: -ms-radial-gradient( 57% 268px, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 27%, rgba(110,30,111,0.93) 56%, rgba(89,31,97,0.89) 67%, rgba(79,31,90,0.87843) 78%, rgba(68,31,83,0.88) 100%, rgba(53,14,74,0.89) 134%, rgba(47,12,66,0.8902) 158%, rgba(34,8,51,0.81) 186%, rgba(14,2,28,0.6902) 300%);
+    opacity: 0.902;
+    height: 100%;
+}
+
 .container .project-ragne-trade {
     padding-left: 1px;
 }
@@ -44,7 +55,7 @@ header img.btn-close {
     display: inline-block;
     position: absolute;
     margin-top: 6px;
-    margin-left: 15px;
+    margin-left: 10px;
     color: black;
 }
 
@@ -128,7 +139,9 @@ header img.btn-close {
 }
 
 #vi-phone {
-    margin-bottom: -7px;
+    margin-bottom: -3px;
+    margin-left: 4px;
+    margin-right: 3px;
 }
 
 #vi-email {
@@ -180,14 +193,20 @@ footer div a {
       background-image: url(../images/v.png);
   }
 
+    #range-trade-html {
+        /* background: radial-gradient(circle farthest-side at center 285px, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%); */
+        /* background: radial-gradient(50% 50%, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 4%, rgba(110,30,111,0.93) 21%, rgba(89,31,97,0.89) 31%, rgba(79,31,90,0.87843) 34%, rgba(68,31,83,0.88) 38%, rgba(53,14,74,0.89) 52%, rgba(47,12,66,0.8902) 60%, rgba(34,8,51,0.81) 77%, rgba(14,2,28,0.6902) 100%); */
+        background-color: rgb(43, 25, 60);
+        background-image: -moz-radial-gradient( 53vw 268px, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 32%, rgba(110,30,111,0.93) 60%, rgba(89,31,97,0.89) 83%, rgba(79,31,90,0.87843) 101%, rgba(68,31,83,0.88) 136%, rgba(53,14,74,0.89) 170%, rgba(47,12,66,0.8902) 208%, rgba(34,8,51,0.81) 232%, rgba(14,2,28,0.6902) 300%);
+        background-image: -webkit-radial-gradient( 53vw 268px, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 32%, rgba(110,30,111,0.93) 60%, rgba(89,31,97,0.89) 83%, rgba(79,31,90,0.87843) 101%, rgba(68,31,83,0.88) 136%, rgba(53,14,74,0.89) 170%, rgba(47,12,66,0.8902) 208%, rgba(34,8,51,0.81) 232%, rgba(14,2,28,0.6902) 300%);
+        background-image: -ms-radial-gradient( 53vw 268px, circle closest-side, rgb(210,86,124) 0%, rgba(160,58,118,0.99) 32%, rgba(110,30,111,0.93) 60%, rgba(89,31,97,0.89) 83%, rgba(79,31,90,0.87843) 101%, rgba(68,31,83,0.88) 136%, rgba(53,14,74,0.89) 170%, rgba(47,12,66,0.8902) 208%, rgba(34,8,51,0.81) 232%, rgba(14,2,28,0.6902) 300%);
+        opacity: 0.902;
+        height: 100%;
+    }
+
     body#range-trade-portfolio {
         background-image: none;
         background-color: #1e0a2d00;
-    }
-
-    #range-trade-html {
-        background: radial-gradient(circle farthest-side at 20vh 40vh, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%);
-        height: 100%;
     }
 
     .project-description {
@@ -242,7 +261,7 @@ footer div a {
       position: absolute;
       top: 30px;
       text-align: center;
-      width: calc(100vh - 19px);
+      width: calc(50vw + 435px);
       top: 30px;
   }
 
@@ -323,7 +342,6 @@ footer div a {
 
     #range-trade-portfolio .portfolio .project-ragne-trade {
         margin-left: 5px;
-        background-color: #2d0841;
         box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 1px 1px 46px rgba(0, 0, 0, 1);
     }
 
@@ -377,11 +395,6 @@ footer div a {
     body#range-trade-portfolio {
         background-image: none;
         background-color: #1e0a2d00;
-    }
-
-    #range-trade-html {
-        background: radial-gradient(circle farthest-side at 424px 284px, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%);
-        height: 100%;
     }
 
     .project-description {
@@ -524,7 +537,6 @@ footer div a {
 
     #range-trade-portfolio .portfolio .project-ragne-trade {
         margin-left: 5px;
-        background-color: #2d0841;
         box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 1px 1px 46px rgba(0, 0, 0, 1);
     }
 
@@ -578,12 +590,6 @@ footer div a {
     body#range-trade-portfolio {
         background-image: none;
         background-color: #1e0a2d00;
-    }
-
-    #range-trade-html {
-        /* background: radial-gradient(circle closest-side at center, #932458 0%, #972666 10%, #5d165e 30%, #4e1658 70%, #1e0a2d 100%); */
-        background: radial-gradient(circle farthest-side at 424px 284px, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%);
-        height: 100%;
     }
 
     .portfolio-presentation img {
@@ -737,7 +743,6 @@ footer div a {
 
     #range-trade-portfolio .portfolio .project-ragne-trade {
         margin-left: -25px;
-        background-color: #2d0841;
         box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 1px 1px 46px rgba(0, 0, 0, 1);
     }
 
@@ -791,12 +796,6 @@ footer div a {
     body#range-trade-portfolio {
         background-image: none;
         background-color: #1e0a2d00;
-    }
-
-    #range-trade-html {
-        /* background: radial-gradient(circle closest-side at center, #932458 0%, #972666 10%, #5d165e 30%, #4e1658 70%, #1e0a2d 100%); */
-        background: radial-gradient(circle farthest-side at 424px 284px, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%);
-        height: 100%;
     }
 
     .container {
@@ -963,7 +962,6 @@ footer div a {
 
     #range-trade-portfolio .portfolio .project-ragne-trade {
         margin-left: -25px;
-        background-color: #2d0841;
         box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 1px 1px 46px rgba(0, 0, 0, 1);
     }
 
@@ -1007,12 +1005,15 @@ footer div a {
         background-color: #fff;
         background-position: center;
         background-repeat-x: no-repeat;
-        padding: 0px 50px;
+        background-position-y: 154px;
+        padding: 0px 0px;
+        background-image: url(../images/bg.jpg);
     }
 
     #start-state {
-        background-size: 130px;
-        background-image: url(../images/v.png);
+        background-size: 190px;
+        background-position-y: 300px;
+        background-image: url(../images/v-2.png);
     }
 
     body#range-trade-portfolio {
@@ -1020,17 +1021,29 @@ footer div a {
         background-color: #1e0a2d00;
     }
 
-    #range-trade-html {
-        background: radial-gradient(circle farthest-side at center 285px, #932458 0%, #972666 10%, #5d165e 25%, #4e1658 34%, #1e0a2d 97%);
-        height: 100%;
-    }
 
     .container {
-        width: 315px;
+        width: 350px;
         margin: 0 auto;
         margin-top: 70px;
         background-repeat: no-repeat;
         background-position: right;
+    }
+
+    .container .header-dot {
+        height: 7px;
+        width: 7px;
+        background-color: #610df2;
+        margin-right: 8px;
+    }
+
+    .container .project-ragne-trade div {
+        font-size: 0.85em;
+        margin-top: 1px;
+    }
+
+    .portfolio {
+        margin-top: 125px;
     }
 
     .portfolio .project-kaelum {
@@ -1038,14 +1051,14 @@ footer div a {
     }
 
     .container.container-range-trade {
-        width: 315px;
+        width: 350px;
         height: 500px;
         margin: 0 auto;
         margin-top: 70px;
     }
 
     .container.container-kaelum {
-        width: 440px;
+        width: 350px;
         height: 500px;
         margin: 0 auto;
         margin-top: 70px;
@@ -1126,9 +1139,17 @@ footer div a {
         display: inline-block;
     }
 
+    #range-trade-state .portfolio .project-ragne-trade img {
+        border: none;
+    }
+
+    .portfolio .project-ragne-trade img {
+        width: 47px;
+        border: solid 1px #cde0f0;
+    }
+
     #range-trade-portfolio .portfolio .project-ragne-trade {
         margin-left: -25px;
-        background-color: #2d0841;
         box-shadow: inset 0px 0px 0px rgba(154, 147, 140, 0.5), 1px 1px 46px rgba(0, 0, 0, 1);
     }
 
@@ -1139,6 +1160,14 @@ footer div a {
         width: 245px;
     }
 
+    #range-trade-state .portfolio .project-ragne-trade .text {
+        padding-top: 10px;
+    }
+
+    #range-trade-state .portfolio .project-ragne-trade .text div {
+        padding-top: 3px;
+    }
+
     #range-trade-portfolio .portfolio .project-ragne-trade .right {
         padding-top: 0px;
         /* background-image: url(..); */
@@ -1146,7 +1175,7 @@ footer div a {
         height: 50px;
         right: 0px;
         margin-top: 0px;
-        margin-right: 33px;
+        margin-right: 68px;
     }
 
     #range-trade-portfolio .portfolio .project-ragne-trade .right img {
@@ -1189,8 +1218,12 @@ footer div a {
         padding-left: 20px;
         font-size: 17px;
         font-weight: 500;
-        color: #929292;
+        color: #afadad;
         width: 330px;
+    }
+
+    footer div a {
+        color: #afadad;
     }
 
     footer .what-are-we {
@@ -1199,6 +1232,8 @@ footer div a {
         padding-left: 0px;
         padding-top: 25px;
         text-align: left;
+        font-size: 0.8em;
+        color: #dadada;
     }
 
     .portfolio h2 {
@@ -1211,9 +1246,13 @@ footer div a {
         margin-left: -5px;
     }
 
+    .telegram img {
+        padding-right: 5px;
+    }
+
     .portfolio-presentation img {
-        height: 338px;
-        margin-left: 14px;
+        height: 360px;
+        margin-left: 20px;
     }
 
     .email {
@@ -1224,7 +1263,11 @@ footer div a {
 
     .phone {
         padding-left: 4px;
-        margin-top: 10px;
+        margin-top: 15px;
+    }
+
+    .phone img {
+        padding-right: 11px;
     }
 
     .phone, .telegram, .email {
