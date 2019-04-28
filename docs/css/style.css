@@ -180,6 +180,19 @@ footer div a {
     text-decoration: none;
 }
 
+.animate-btn {
+    animation: shadow 2s infinite alternate;
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 0 0 55px 10px #610df2;
+    }
+    to {
+        box-shadow: 0 0 110px 20px #ad81f9;
+    }
+}
+
 @media all and (min-width: 1200px) {
   body {
       background-image: url(../images/bg.jpg);
