@@ -181,7 +181,7 @@ footer div a {
 }
 
 .animate-btn {
-    animation: shadow 2s infinite alternate;
+    /* animation: shadow 2s infinite alternate; */
 }
 
 @keyframes shadow {
@@ -1024,8 +1024,8 @@ footer div a {
     }
 
     #start-state {
-        background-size: 190px;
-        background-position-y: 300px;
+        background-size: 200px;
+        background-position-y: 225px;
         background-image: url(../images/v-2.png);
     }
 
@@ -1046,7 +1046,7 @@ footer div a {
     .container .header-dot {
         height: 7px;
         width: 7px;
-        background-color: #610df2;
+        background-color: #e7e7e7;
         margin-right: 8px;
     }
 
@@ -1056,7 +1056,7 @@ footer div a {
     }
 
     .portfolio {
-        margin-top: 125px;
+        margin-top: 140px;
     }
 
     .portfolio .project-kaelum {
@@ -1207,6 +1207,19 @@ footer div a {
         margin-top: 0px;
     }
 
+    #btn-range-trade-open {
+        height: 30px;
+        padding: 13px 0px;
+        background-color: #fbfdfd;
+        width: 100%;
+        /* box-shadow: 0 0 19px 7px #07171d40; */
+        box-shadow: 0px 2px 6px 0px rgba(226, 228, 247, 0.17),0px 4px 20px 0px rgba(184, 189, 222, 0.22);
+        border-top: solid 2px #fff;
+        border-bottom: solid 2px #fff;
+        position: absolute;
+        left: 0;
+    }
+
     .container h1 {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
         color: black;
@@ -1221,7 +1234,7 @@ footer div a {
     }
 
     footer {
-        margin-top: 30px;
+        margin-top: 120px;
         font-family: 'Geometria', 'Roboto', sans-serif;
     }
 
@@ -1251,7 +1264,7 @@ footer div a {
 
     .portfolio h2 {
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .telegram {

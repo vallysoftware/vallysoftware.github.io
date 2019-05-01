@@ -10,6 +10,12 @@
   let currentScreenState = START_SCREEN_STATE;
   let blockedUpdateScreen = false;
 
+  if (window.innerWidth < 570) {
+    var bodyLeft = $('body').css('margin-left').replace('px', '');
+    var containerLeft = $('#start-state').css('margin-left').replace('px', '');
+    var left = parseInt(bodyLeft) + parseInt(containerLeft);
+    $('#btn-range-trade-open').css('padding-left', left + 'px');
+  }
   /**
    * Adding event listeners
    */
