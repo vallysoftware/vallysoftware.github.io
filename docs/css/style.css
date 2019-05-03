@@ -18,6 +18,9 @@
     src: url(../fonts/oswald-regular.otf);
 }
 
+html {
+  height: 100%;
+}
 body {
   min-height: 599px;
 }

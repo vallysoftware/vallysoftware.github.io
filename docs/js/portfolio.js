@@ -330,5 +330,14 @@
         window.location = 'https://www.range.trade/';
       }
     });
+
+    VANTA.CLOUDS({
+       el: "html", 
+       skyColor: 0x89b3ca,
+       cloudShadowColor: 0x6b8aa7,
+       sunColor: 0xfcc4fc,
+       sunGlareColor: 0x252931,
+       sunlightColor: 0xe38e2f
+    });
   });
 }());
