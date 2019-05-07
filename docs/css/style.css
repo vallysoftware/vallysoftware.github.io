@@ -144,8 +144,8 @@ header img.btn-close {
 
 #vi-phone {
     margin-bottom: -3px;
-    margin-left: 4px;
-    margin-right: 3px;
+    margin-left: 5px;
+    margin-right: 0px;
     width: 12px;
 }
 
@@ -1338,7 +1338,7 @@ footer div a {
     }
 
     .phone img {
-        padding-right: 11px;
+        padding-right: 7px;
     }
 
     .phone, .telegram, .email {
