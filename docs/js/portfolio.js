@@ -14,7 +14,7 @@
     var bodyLeft = $('body').css('margin-left').replace('px', '');
     var containerLeft = $('#start-state').css('margin-left').replace('px', '');
     var left = parseInt(bodyLeft) + parseInt(containerLeft);
-    $('#btn-range-trade-open').css('padding-left', left + 'px');
+    $('#btn-range-trade-open, #btn-apla').css('padding-left', left + 'px');
   }
   /**
    * Adding event listeners
@@ -343,5 +343,10 @@
       }
     });
 
+    $(document).on('click', '.project-apla', function () {
+      if ($('.project-apla').css('display') == 'block') {
+        window.location = 'https://apla.tb.ru/projectmanager'
+      }
+    })
   });
 }());

@@ -54,7 +54,7 @@ header img.btn-close {
     padding-left: 1px;
 }
 
-.container .project-ragne-trade div {
+.container .project-ragne-trade div, .container .project-apla div {
     display: inline-block;
     position: absolute;
     margin-top: 6px;
@@ -1049,12 +1049,20 @@ footer div a {
     .container .header-dot {
         height: 7px;
         width: 7px;
-        background-color: #e7e7e7;
+        background-color: #c7cacd;
         margin-right: 8px;
     }
 
-    .container .project-ragne-trade div {
-        font-size: 0.85em;
+    .container .project-ragne-trade div, .container .project-apla div {
+        font-size: 0.95em;
+        margin-top: -1px;
+    }
+
+    .container .project-apla div {
+        font-family: 'GeometriaBold';
+        font-size: 25px;
+        font-weight: bold;
+        color: #1e1e21;
         margin-top: 1px;
     }
 
@@ -1064,6 +1072,23 @@ footer div a {
 
     .portfolio .project-kaelum {
         margin-top: 15px;
+    }
+
+    .portfolio .project {
+        height: 30px;
+        padding: 13px 0px;
+        background-color: #fbfdfd;
+        width: 100%;
+        box-shadow: 0px 2px 6px 0px rgba(226, 228, 247, 0.17), 0px 4px 20px 0px rgba(184, 189, 222, 0.22);
+        border-top: solid 2px #fff;
+        border-bottom: solid 2px #fff;
+        position: absolute;
+        left: 0;
+    }
+
+    .portfolio .project-apla {
+        padding-top: 11px;
+        padding-bottom: 15px;
     }
 
     .container.container-range-trade {
@@ -1159,7 +1184,7 @@ footer div a {
         border: none;
     }
 
-    .portfolio .project-ragne-trade img {
+    .portfolio .project-ragne-trade img, .portfolio .project-apla img  {
         width: 47px;
         border: solid 1px #cde0f0;
     }
@@ -1213,6 +1238,8 @@ footer div a {
     #btn-range-trade-open {
         height: 30px;
         padding: 13px 0px;
+        padding-top: 11px;
+        padding-bottom: 15px;
         background-color: #fbfdfd;
         width: 100%;
         /* box-shadow: 0 0 19px 7px #07171d40; */
@@ -1223,21 +1250,31 @@ footer div a {
         left: 0;
     }
 
+    #btn-apla {
+        margin-top: 63px;
+    }
+
+    #btn-apla a img {
+        /* width: 57px; */
+    }
+
     .container h1 {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
         color: black;
-        font-weight: 700;
-        font-size: 40px;
-        width: 200px;
+        font-weight: 800;
+        font-size: 49px;
+        width: 273px;
+        line-height: 51px;
+        letter-spacing: 0.02em;
     }
 
     .container h2 {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
-        color: #e7e7e7;
+        color: #c7cacd;
     }
 
     footer {
-        margin-top: 120px;
+        margin-top: 175px;
         font-family: 'Geometria', 'Roboto', sans-serif;
     }
 
@@ -1247,12 +1284,12 @@ footer div a {
         padding-left: 20px;
         font-size: 17px;
         font-weight: 500;
-        color: #afadad;
+        color: #929292f0;
         width: 330px;
     }
 
     footer div a {
-        color: #afadad;
+        color: #929292f0;
     }
 
     footer .what-are-we {
@@ -1262,7 +1299,7 @@ footer div a {
         padding-top: 25px;
         text-align: left;
         font-size: 0.8em;
-        color: #dadada;
+        color: #a6a7a9;
     }
 
     .portfolio h2 {
