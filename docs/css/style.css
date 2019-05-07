@@ -139,17 +139,20 @@ header img.btn-close {
 
 #vi-telegram {
     margin-bottom: -5px;
+    width: 18px;
 }
 
 #vi-phone {
     margin-bottom: -3px;
     margin-left: 4px;
     margin-right: 3px;
+    width: 12px;
 }
 
 #vi-email {
     margin-bottom: -2px;
     margin-right: 4px;
+    width: 17px;
 }
 
 #range-trade-portfolio {
@@ -1028,8 +1031,8 @@ footer div a {
 
     #start-state {
         background-size: 200px;
-        background-position-y: 225px;
-        background-image: url(../images/v-2.png);
+        background-position-y: 235px;
+        background-image: url(../images/v-4.png);
     }
 
     body#range-trade-portfolio {
@@ -1049,7 +1052,7 @@ footer div a {
     .container .header-dot {
         height: 7px;
         width: 7px;
-        background-color: #c7cacd;
+        background-color: #929292;
         margin-right: 8px;
     }
 
@@ -1270,7 +1273,7 @@ footer div a {
 
     .container h2 {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
-        color: #c7cacd;
+        color: #929292;
     }
 
     footer {
@@ -1284,12 +1287,12 @@ footer div a {
         padding-left: 20px;
         font-size: 17px;
         font-weight: 500;
-        color: #929292f0;
+        color: #929292;
         width: 330px;
     }
 
     footer div a {
-        color: #929292f0;
+        color: #929292;
     }
 
     footer .what-are-we {
@@ -1299,12 +1302,13 @@ footer div a {
         padding-top: 25px;
         text-align: left;
         font-size: 0.8em;
-        color: #a6a7a9;
+        color: #929292;
     }
 
     .portfolio h2 {
         margin-top: 50px;
         margin-bottom: 20px;
+        letter-spacing: 0.01em;
     }
 
     .telegram {
@@ -1328,7 +1332,8 @@ footer div a {
     }
 
     .phone {
-        padding-left: 4px;
+        padding-left: 0px;
+        margin-left: -8px;
         margin-top: 15px;
     }
 
