@@ -28,16 +28,16 @@
     // checkScreenState();
     btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
     btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
-    VANTA.CLOUDS({
+    /*VANTA.CLOUDS({
        el: "html",
        /*skyColor: 0x89b3ca,
        cloudShadowColor: 0x6b8aa7,
        sunColor: 0xfcc4fc,
        sunGlareColor: 0x252931,
        sunlightColor: 0xe38e2f*/
-        /*skyColor: 0xe4e5e5, cloudShadowColor: 0x6b8aa7, sunColor: 0xfcc4fc, sunGlareColor: 0x252931, sunlightColor: 0xea973a*/
+        /*skyColor: 0xe4e5e5, cloudShadowColor: 0x6b8aa7, sunColor: 0xfcc4fc, sunGlareColor: 0x252931, sunlightColor: 0xea973a
         skyColor: 0xadd9ea, cloudColor: 0xd2dcea, cloudShadowColor: 0x638cb3
-    });
+    });*/
   } else {
     btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
     btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);

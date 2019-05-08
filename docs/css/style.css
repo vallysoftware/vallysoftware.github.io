@@ -3,9 +3,29 @@
     src: url(../fonts/gilroy-extrabold.otf);
 }
 
-@font-face {
+/*@font-face {
     font-family: GeometriaBold;
     src: url(../fonts/geometria-bold.otf);
+}*/
+
+@font-face {
+    font-family: 'Gilroy Semibold Italic';
+    /* src: url('Gilroy-SemiBoldItalic.eot'); */
+    /* src: url('Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), */
+    /* url('Gilroy-SemiBoldItalic.woff') format('woff'), */
+    url('../fonts/Gilroy-SemiBoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeometriaBold';
+    src: url('../fonts/Geometria-Bold.eot');
+    src: url('../fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Geometria-Bold.woff') format('woff'),
+    url('../fonts/Geometria-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -73,6 +93,14 @@ header img.btn-close {
     margin-left: 15px;
 }
 
+.container .project-apla div {
+    font-family: 'GeometriaBold';
+    font-size: 25px;
+    font-weight: bold;
+    color: #1e1e21;
+    margin-top: 7px;
+}
+
 .container .project-kaelum img {
     width: 64px;
 }
@@ -90,6 +118,7 @@ header img.btn-close {
     width: 306px;
     height: 60px;
     cursor: pointer;
+    padding-left: 0px;
 }
 
 .portfolio .project-kaelum {
@@ -98,6 +127,10 @@ header img.btn-close {
     margin-top: 30px;
     width: 160px;
     cursor: pointer;
+}
+
+.project-apla a img {
+    width: 63px;
 }
 
 .project-description h4 {
@@ -1058,7 +1091,7 @@ footer div a {
 
     .container .project-ragne-trade div, .container .project-apla div {
         font-size: 0.95em;
-        margin-top: -1px;
+        margin-top: 0px;
     }
 
     .container .project-apla div {
@@ -1141,6 +1174,10 @@ footer div a {
     .project-description {
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    .project a {
+        display: block;
     }
 
     .container.container-kaelum .portfolio-presentation {
