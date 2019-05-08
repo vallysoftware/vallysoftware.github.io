@@ -1,3 +1,10 @@
+/* At-rule for "nice-style" in Font One */
+@font-feature-values GeometriaBold {
+  @styleset {
+    nice-style: 12;
+  }
+}
+
 @font-face {
     font-family: GilroyExtraBold;
     src: url(../fonts/gilroy-extrabold.otf);
@@ -76,6 +83,7 @@ header img.btn-close {
 
 .container .project-ragne-trade div, .container .project-apla div {
     display: inline-block;
+    font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
     position: absolute;
     margin-top: 6px;
     margin-left: 10px;
@@ -94,10 +102,10 @@ header img.btn-close {
 }
 
 .container .project-apla div {
-    font-family: 'GeometriaBold';
+    font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: bold;
-    color: #1e1e21;
+    color: black;
     margin-top: 7px;
 }
 
@@ -841,8 +849,8 @@ footer div a {
     }
 
     #start-state {
-        background-size: 177px;
-        background-image: url(../images/v-3.png);
+        background-size: 210px;
+        background-image: url(../images/v-5.png);
     }
 
     body#range-trade-portfolio {
@@ -953,12 +961,18 @@ footer div a {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
         color: black;
         font-weight: 700;
-        font-size: 40px;
+        line-height: 1em;
+        font-size: 34px;
     }
 
     .container h2 {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
-        color: #e7e7e7;
+        color: #c6c4c4;
+    }
+
+    .container .header-dot {
+        background-color: #4d0dee;
+        margin-right: 12px;
     }
 
     footer {
@@ -997,7 +1011,7 @@ footer div a {
     }
 
     .phone {
-        margin-left: 9px;
+        margin-left: 0px;
     }
 
     .phone img {
@@ -1092,6 +1106,7 @@ footer div a {
     .container .project-ragne-trade div, .container .project-apla div {
         font-size: 0.95em;
         margin-top: 0px;
+        font-variant-alternates: styleset(nice-style);
     }
 
     .container .project-apla div {
