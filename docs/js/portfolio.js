@@ -338,12 +338,14 @@
 
   $(document).ready(function () {
     $(document).on('click', '.project-ragne-trade', function () {
-        window.location = 'https://www.range.trade/';
+        window.open('https://www.range.trade/');
+        // window.location = 'https://www.range.trade/';
     });
 
     $(document).on('click', '.project-apla', function () {
       if ($('.project-apla').css('display') == 'block') {
-        window.location = 'https://apla.tb.ru/projectmanager'
+        window.open('https://apla.tb.ru/projectmanager');
+        // window.location = 'https://apla.tb.ru/projectmanager';
       }
     })
   });
