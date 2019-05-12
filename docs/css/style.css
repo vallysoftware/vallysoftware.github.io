@@ -255,7 +255,7 @@ footer div {
     }
 
     header img {
-        width: 230px;
+        width: 250px;
     }
 
     #start-state {
@@ -425,7 +425,7 @@ footer div {
 
     footer div {
         display: inline;
-        padding-right: 57px;
+        padding-right: 54px;
         padding-left: 0px;
     }
 
@@ -535,7 +535,7 @@ footer div {
     .container {
         width: 1150px;
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 55px;
         background-repeat: no-repeat;
         background-position: right;
     }
@@ -774,7 +774,7 @@ footer div {
     .container {
         width: 1000px;
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 55px;
         background-repeat: no-repeat;
         background-position: right;
     }
@@ -1013,7 +1013,7 @@ footer div {
     .container {
         width: 750px;
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 55px;
         background-repeat: no-repeat;
         background-position: right;
     }
