@@ -26,8 +26,8 @@
     // btnKaelumClose.addEventListener('mouseleave', mouseOutBtnKaelum);
 
     // checkScreenState();
-    btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
-    btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
+    // btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
+    // btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
     /*VANTA.CLOUDS({
        el: "html",
        /*skyColor: 0x89b3ca,
@@ -39,8 +39,8 @@
         skyColor: 0xadd9ea, cloudColor: 0xd2dcea, cloudShadowColor: 0x638cb3
     });*/
   } else {
-    btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
-    btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
+    // btnRangeTradeOpen.addEventListener('click', clickBtnRangeTrade);
+    // btnRangeTradeClose.addEventListener('click', clickBtnRangeTradeClose);
     // btnKaelumOpen.addEventListener('click', clickBtnKaelum);
     // btnKaelumClose.addEventListener('click', clickBtnKaelumClose);
   }
@@ -185,7 +185,7 @@
    * @author Robert Kuznetsov
    */
   function clickBtnRangeTrade() {
-    if (! blockedUpdateScreen) {
+    /*if (! blockedUpdateScreen) {
       blockedUpdateScreen = true;
       let $startState = $('#start-state');
       let $rangeTradeState = $('#range-trade-state');
@@ -204,7 +204,7 @@
         $body.attr('id', 'range-trade-portfolio');
         $html.attr('id', 'range-trade-html');
       });
-    }
+    }*/
 
     // let startState = document.getElementById('start-state');
     // let rangeTradeState = document.getElementById('range-trade-state');
@@ -338,9 +338,7 @@
 
   $(document).ready(function () {
     $(document).on('click', '.project-ragne-trade', function () {
-      if ($('#range-trade-state').css('display') == 'block') {
         window.location = 'https://www.range.trade/';
-      }
     });
 
     $(document).on('click', '.project-apla', function () {
