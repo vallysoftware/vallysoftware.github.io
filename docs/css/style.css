@@ -250,6 +250,8 @@ footer div {
         background-color: #fefefe;
         background-position: center;
         background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-position-y: 0px;
     }
 
     header img {
@@ -494,6 +496,8 @@ footer div {
         background-color: #fefefe;
         background-position: center;
         background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-position-y: 0px;
     }
 
     header img {
@@ -1536,7 +1540,7 @@ footer div {
     }
 
     .container .project-apla div {
-        font-family: 'GeometriaBold';
+        /* font-family: 'GeometriaBold'; */
         font-size: 25px;
         font-weight: bold;
         margin-top: 0px;
