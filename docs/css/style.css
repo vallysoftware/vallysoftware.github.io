@@ -107,8 +107,13 @@ header img.btn-close {
 .container .header-dot {
     height: 10px;
     width: 10px;
-    background-color: #6f6ef2;
+    margin-right: 17px;
+    background-color: #4c05ef;
     display: inline-block;
+}
+
+.portfolio .project {
+    cursor: pointer;
 }
 
 .portfolio .project-ragne-trade {
@@ -369,6 +374,35 @@ footer div {
         margin-bottom: 25px;
     }
 
+    .container .project-ragne-trade div  {
+        margin-top: 10px;
+        margin-left: 9px;
+        font-size: 32px;
+    }
+
+    .container .project-apla div {
+        margin-top: 8px;
+        margin-left: 24px;
+        font-size: 36px;
+    }
+
+    .portfolio .project {
+        width: 350px;
+        height: 64px;
+        border: 5px solid #c7c7c754;
+    }
+
+    .project-ragne-trade a img {
+        width: 70px;
+        margin-top: 6.5px;
+    }
+
+    .project-apla a img {
+        width: 32px;
+        margin-top: 15px;
+        margin-left: 23px;
+    }
+
     .container h1 {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
         color: black;
@@ -468,7 +502,7 @@ footer div {
 
     #start-state {
         background-image: url(../images/v.png);
-        background-position-y: 125px;
+        background-position-y: 153px;
     }
 
     #range-trade-html {
@@ -584,6 +618,35 @@ footer div {
         margin-bottom: 25px;
     }
 
+    .container .project-ragne-trade div  {
+        margin-top: 10px;
+        margin-left: 9px;
+        font-size: 32px;
+    }
+
+    .container .project-apla div {
+        margin-top: 7px;
+        margin-left: 24px;
+        font-size: 36px;
+    }
+
+    .portfolio .project {
+        width: 350px;
+        height: 64px;
+        border: 5px solid #c7c7c754;
+    }
+
+    .project-ragne-trade a img {
+        width: 70px;
+        margin-top: 6.5px;
+    }
+
+    .project-apla a img {
+        width: 32px;
+        margin-top: 15px;
+        margin-left: 23px;
+    }
+
     .container h1 {
         font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
         color: black;
@@ -623,7 +686,7 @@ footer div {
 
     .portfolio h2 {
         margin-top: 50px;
-        margin-bottom: 45px;
+        margin-bottom: 39px;
         font-size: 34px;
     }
 
@@ -794,7 +857,36 @@ footer div {
         width: 350px;
         display: inline-block;
         height: 46px;
-        margin-bottom: 30px;
+        margin-bottom: 7px;
+    }
+
+    .container .project-ragne-trade div  {
+        margin-top: 10px;
+        margin-left: 9px;
+        font-size: 32px;
+    }
+
+    .container .project-apla div {
+        margin-top: 8px;
+        margin-left: 24px;
+        font-size: 36px;
+    }
+
+    .portfolio .project {
+        width: 350px;
+        height: 64px;
+        border: 5px solid #c7c7c754;
+    }
+
+    .project-ragne-trade a img {
+        width: 70px;
+        margin-top: 6.5px;
+    }
+
+    .project-apla a img {
+        width: 32px;
+        margin-top: 15px;
+        margin-left: 23px;
     }
 
     .container h1 {
@@ -808,6 +900,12 @@ footer div {
     .container h2 {
       font-family: 'GilroyExtraBold', 'Roboto', sans-serif;
       color: #e7e7e7;
+      font-size: 32px;
+    }
+
+    .container .header-dot {
+      margin-right: 19px;
+      background-color: #4c05ef;
     }
 
     footer {
@@ -837,7 +935,7 @@ footer div {
 
     .portfolio h2 {
         margin-top: 60px;
-        margin-bottom: 49px;
+        margin-bottom: 20px;
     }
 
     #range-trade-portfolio .portfolio .project-ragne-trade {
@@ -1011,7 +1109,7 @@ footer div {
 
     .portfolio .project-ragne-trade {
         display: inline-block;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .container .project-ragne-trade div  {
@@ -1079,7 +1177,7 @@ footer div {
 
     .portfolio h2 {
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 23px;
         font-size: 28px;
     }
 
@@ -1243,9 +1341,42 @@ footer div {
     .portfolio .project-ragne-trade {
         width: 320px;
         height: 46px;
-        margin-bottom: 25px;
+        margin-bottom: 6px;
         display: inline-block;
         cursor: pointer;
+    }
+
+    .container .project-ragne-trade div  {
+        margin-top: 13px;
+        margin-left: 0px;
+        font-size: 25px;
+    }
+
+    .container .project-apla div {
+        margin-top: 9px;
+        margin-left: 15px;
+        font-size: 29px;
+    }
+
+    .portfolio .project {
+        width: 275px;
+        height: 58px;
+        border: 4px solid #c7c7c754;
+    }
+
+    .project-ragne-trade a img {
+        width: 70px;
+        margin-top: 5.5px;
+    }
+
+    .project-apla a img {
+        width: 32px;
+        margin-top: 12px;
+        margin-left: 24px;
+    }
+
+    .btn-arrow {
+        margin-top: 19.5px !important;
     }
 
     .container h1 {
@@ -1292,7 +1423,7 @@ footer div {
 
     .portfolio h2 {
         margin-top: 58px;
-        margin-bottom: 30px;
+        margin-bottom: 22px;
     }
 
     .telegram {
