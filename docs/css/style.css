@@ -259,8 +259,9 @@ footer div {
     }
 
     #start-state {
-        background-image: url(../images/v.png);
+        background-image: url(../images/v-1200.png);
         background-position-y: 125px;
+        background-size: 400px;
     }
 
     #range-trade-html {
@@ -399,6 +400,12 @@ footer div {
         margin-top: 6.5px;
     }
 
+    .project-apla a {
+        width: 350px;
+        height: 60px;
+        display: inline-block;
+    }
+
     .project-apla a img {
         width: 32px;
         margin-top: 15px;
@@ -505,8 +512,9 @@ footer div {
     }
 
     #start-state {
-        background-image: url(../images/v.png);
+        background-image: url(../images/v-1200.png);
         background-position-y: 153px;
+        background-size: 362px;
     }
 
     #range-trade-html {
@@ -751,9 +759,9 @@ footer div {
 
     #start-state {
         /*margin-top: 500px;*/
-        background-position-y: 116px;
+        background-position-y: 129px;
         background-size: 351px;
-        background-image: url(../images/v.png);
+        background-image: url(../images/v-1200.png);
     }
 
     body#range-trade-portfolio {
@@ -995,8 +1003,8 @@ footer div {
     }
 
     #start-state {
-        background-size: 264px;
-        background-position-y: 163px;
+        background-size: 269px;
+        background-position-y: 183px;
         background-image: url(../images/v-992.png);
     }
 
@@ -1242,7 +1250,7 @@ footer div {
     #start-state {
         background-size: 212px;
         background-image: url(../images/v-5.png);
-        background-position-y: 165px;
+        background-position-y: 178px;
     }
 
     body#range-trade-portfolio {
