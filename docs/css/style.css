@@ -35,6 +35,7 @@
 
 html {
     height: 100%;
+    background-color: #fbfdff;
 }
 
 body {
@@ -247,11 +248,11 @@ footer div {
 @media all and (min-width: 2000px) {
     body {
         background-image: url(../images/bg.jpg);
-        background-color: #fefefe;
+        background-color: #fbfdff;
         background-position: center;
-        background-repeat-x: no-repeat;
-        background-repeat-y: no-repeat;
-        background-position-y: 0px;
+        background-repeat: no-repeat;
+        background-size: 1577px;
+        margin-top: 15vh;
     }
 
     header img {
@@ -500,10 +501,9 @@ footer div {
 @media all and (min-width: 1200px) and (max-width: 1999px){
     body {
         background-image: url(../images/bg.jpg);
-        background-color: #fefefe;
+        background-color: #fbfdff;
         background-position: center;
-        background-repeat-x: no-repeat;
-        background-repeat-y: no-repeat;
+        background-repeat: no-repeat;
         background-position-y: 0px;
     }
 
@@ -748,9 +748,9 @@ footer div {
 @media all and (min-width: 992px) and (max-width: 1199px) {
     body {
         background-image: url(../images/bg.jpg);
-        background-color: #fefefe;
+        background-color: #fbfdff;
         background-position: center;
-        background-repeat-x: no-repeat;
+        background-repeat: no-repeat;
     }
 
     header img {
@@ -991,10 +991,9 @@ footer div {
 @media all and (min-width: 761px) and (max-width: 991px) {
     body {
         background-image: url(../images/bg.jpg);
-        background-color: #fefefe;
-        background-color: #fff;
+        background-color: #fbfdff;
         background-position: center;
-        background-repeat-x: no-repeat;
+        background-repeat: no-repeat;
         background-position-y: 0px;
     }
 
@@ -1240,10 +1239,9 @@ footer div {
 @media all and (min-width: 570px) and (max-width: 761px) {
     body {
         background-image: url(../images/bg.jpg);
-        background-color: #fefefe;
-        background-color: #fff;
+        background-color: #fbfdff;
         background-position: center;
-        background-repeat-x: no-repeat;
+        background-repeat: no-repeat;
         background-position-y: 0px;
     }
 
@@ -1505,10 +1503,9 @@ footer div {
 
 @media all and (min-width: 0px) and (max-width: 569px) {
     body {
-        background-color: #fefefe;
-        background-color: #fff;
+        background-color: #fbfdff;
         background-position: center;
-        background-repeat-x: no-repeat;
+        background-repeat: no-repeat;
         background-position-y: 154px;
         padding: 0px 0px;
         background-image: url(../images/bg.jpg);
