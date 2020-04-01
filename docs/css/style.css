@@ -791,7 +791,7 @@ footer div {
         width: 1000px;
         height: 600px;
         margin: 0 auto;
-        margin-top: 70px;g
+        margin-top: 70px;
         background: radial-gradient(circle closest-side at center, #a625ad, #1e0a2d);
         /* background-image: url(../images/range-trade-portfolio.png); */
         background-repeat: no-repeat;
@@ -1363,9 +1363,9 @@ footer div {
     }
 
     .container .project-apla div {
-        margin-top: 9px;
+        margin-top: 11px;
         margin-left: 15px;
-        font-size: 29px;
+        font-size: 26px;
     }
 
     .portfolio .project {
